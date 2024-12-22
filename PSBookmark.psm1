@@ -40,7 +40,7 @@ function New-DynamicParameter
         $ParameterAttribute.Position = 0
 
         $AttributeCollection.Add($ParameterAttribute)
-
+            
         $arrSet = $actionObject.Keys
         $ValidateSetAttribute = New-Object System.Management.Automation.ValidateSetAttribute($arrSet)
 
@@ -146,8 +146,8 @@ function Remove-LocationBookmark
 }
 
 Set-Alias -Name goto -Value Set-LocationBookmarkAsPWD
-Set-Alias -Name save -Value Save-LocationBookmark
-Set-Alias -Name glb -Value Get-LocationBookmark
-Set-Alias -Name rlb -Value Remove-LocationBookmark
+Set-Alias -Name mark -Value Save-LocationBookmark
+Set-Alias -Name marks -Value Get-LocationBookmark
+Set-Alias -Name delmark -Value Remove-LocationBookmark
 
-Export-ModuleMember -Function Save-LocationBookmark,Set-LocationBookmarkAsPWD,Get-LocationBookmark,Remove-LocationBookmark -Alias goto,save,glb,rlb
+Export-ModuleMember -Function Save-LocationBookmark, Set-LocationBookmarkAsPWD, Get-LocationBookmark, Remove-LocationBookmark -Alias goto, mark, marks, delmark
