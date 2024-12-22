@@ -1,4 +1,4 @@
-﻿#TODO: Don't like this method; will update this without breaking the module later
+#TODO: Don't like this method; will update this without breaking the module later
 $dataPath = "${env:USERPROFILE}\Documents\PSBookmarkData.ps1"
 
 #Credit: June Blender - https://www.sapien.com/blog/2014/10/21/a-better-tostring-method-for-hash-tables/
